@@ -1,0 +1,47 @@
+.counter {
+  display: flex;
+  justify-content: flex-end
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 600px;
+}
+
+form div {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+form textarea {
+  border: none;
+  border-bottom: 3px solid black;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  height: 40px;
+}
+div button {
+  background-color: darkblue;
+  color: white;
+  font-family: 'Bungee', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+div output {
+  font-family: 'Bungee', sans-serif;
+}
