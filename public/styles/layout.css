@@ -7,7 +7,6 @@ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
 }
 
 /*
@@ -26,9 +25,10 @@ body {
  */
 
 
- main {
-  width: 90%;
+ main.container {
   display: flex;
-  justify-content: center;
-  background-color: #f4f1ec;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #f4f1ec
  }

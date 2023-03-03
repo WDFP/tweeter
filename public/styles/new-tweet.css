@@ -3,7 +3,7 @@
   justify-content: flex-end
 }
 
-main {
+section.new-tweet {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,6 +11,7 @@ main {
 }
 
 form {
+  margin-top: 35px;
   width: 600px;
 }
 

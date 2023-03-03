@@ -1,0 +1,77 @@
+section.tweet-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.tweets {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+  border: solid black 3px;
+}
+
+.user-name {
+  color: transparent;
+  margin-left: 50px;
+}
+
+.tweet-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  padding: 5px;
+  /* margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px; */
+  margin: 15px 20px 15px 20px;
+  justify-content: space-between;
+  border-top: solid black 3px;
+  font-size: medium;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px; */
+  margin: 25px 20px 0px 20px
+}
+
+.tweet-username {
+  display: flex;
+  align-items: center;
+}
+
+.fa-flag-checkered {
+  color: blue;
+}
+.fa-flag-checkered:hover {
+  color: orange;
+}
+
+.fa-retweet {
+  color: blue;
+}
+
+.fa-retweet:hover {
+  color: orange;
+}
+
+.fa-heart-circle-plus {
+  color: blue;
+}
+
+.fa-heart-circle-plus:hover {
+  color: orange;
+}
