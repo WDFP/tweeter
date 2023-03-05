@@ -58,4 +58,16 @@ return $tweet;
 
 $(document).ready(function () {
   renderTweets(data);
+  $("#request").submit(function (event) {
+    event.preventDefault();
+    console.log(event);
+
+    $.ajax({
+      url: "/tweets/", 
+      method: "post",
+      data: $(this).serialize()
+    }).then(function(res) {
+      console.log(res)
+    });
+  })
 });
