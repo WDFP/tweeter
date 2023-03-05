@@ -2,7 +2,7 @@ const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-  $(".tweet-box").empty()
+  $(".tweet-box").empty();
   for (let index of tweets) {
     const render = createTweetElement(index);
     $(".tweet-box").prepend(render); // takes return value and appends it to the tweets container
@@ -43,13 +43,22 @@ $(document).ready(function () {
     event.preventDefault();
     console.log(event);
 
-    $.ajax({
-      url: "/tweets/",
-      method: "post",
-      data: $(this).serialize(),
-    }).then(function (res) {
-      loadTweets();
-    });
+    const charMax = 140;
+    const inputChar = $(this).find("#tweet-text").val().length;
+
+    if (!inputChar) {
+      return alert("Your Tweet is Empty");
+    } else if (inputChar > charMax) {
+      return alert("Your Tweet Exceeds Max Allowed");
+    } else {
+      $.ajax({
+        url: "/tweets/",
+        method: "post",
+        data: $(this).serialize(),
+      }).then(function (res) {
+        loadTweets();
+      });
+    }
   });
   loadTweets();
 });
