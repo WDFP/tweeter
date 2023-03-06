@@ -8,6 +8,7 @@ section.new-tweet {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 form {
@@ -19,7 +20,7 @@ form div {
   /* background-color: aqua; */
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 form textarea {
@@ -48,5 +49,25 @@ div output {
 }
 
 .counter-color {
+  color: red;
+}
+
+#error-empty-string {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border: solid red 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: red;
+}
+
+#error-over-140-char {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border: solid red 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
   color: red;
 }

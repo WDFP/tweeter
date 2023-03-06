@@ -66,7 +66,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2></h2>
+        <div id="error-empty-string"><i class="fa-solid fa-triangle-exclamation"></i>   Your Tweet is Empty   <i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div id="error-over-140-char"><i class="fa-solid fa-triangle-exclamation"></i>   Your Tweet Exceeds Max Allowed   <i class="fa-solid fa-triangle-exclamation"></i></div>
         <form id="request" action="/tweets/" method="POST">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>

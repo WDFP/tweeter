@@ -9,16 +9,23 @@ const renderTweets = function (tweets) {
   }
 };
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function (data) {
   let $tweet = $(`<article class="tweets">
   <div class="tweet-header">
        
-   <span class="tweet-username"><img src="${data.user.avatars}">  <div>${
-    data.user.name
+   <span class="tweet-username"><img src="${escape(
+     data.user.avatars
+   )}">  <div>${escape(data.user.name)}
   }</div></span>
-   <span class="user- name">${data.user.handle}</span>
+   <span class="user- name">${escape(data.user.handle)}</span>
 </div>
-<p class="tweet-text">${data.content.text}</p>
+<p class="tweet-text">${escape(data.content.text)}</p>
 
 <footer>
   <time>${timeago.format(data.created_at)}</time>
@@ -39,6 +46,8 @@ const loadTweets = function () {
 };
 
 $(document).ready(function () {
+  $("#error-empty-string").hide();
+  $("#error-over-140-char").hide();
   $("#request").submit(function (event) {
     event.preventDefault();
     console.log(event);
@@ -47,10 +56,18 @@ $(document).ready(function () {
     const inputChar = $(this).find("#tweet-text").val().length;
 
     if (!inputChar) {
-      return alert("Your Tweet is Empty");
+      // return alert("Your Tweet is Empty");
+      $("#error-empty-string").slideDown("slow");
+      $("#error-over-140-char").hide();
+      return;
     } else if (inputChar > charMax) {
-      return alert("Your Tweet Exceeds Max Allowed");
+      // return alert("Your Tweet Exceeds Max Allowed");
+      $("#error-over-140-char").slideDown("slow");
+      $("#error-empty-string").hide();
+      return;
     } else {
+      $("#error-empty-string").hide();
+      $("#error-over-140-char").hide();
       $.ajax({
         url: "/tweets/",
         method: "post",
