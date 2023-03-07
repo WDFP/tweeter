@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -21,15 +17,34 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
-
  main.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
-  background-color: #f4f1ec
+  background-color: #f4f1ec;
+  margin-top: 150px;
  }
+
+ @media only screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main.container {
+    margin: 150px 20px 0px 20px
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  header {
+    margin-top: 300px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}

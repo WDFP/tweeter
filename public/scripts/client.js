@@ -5,7 +5,7 @@ const renderTweets = function (tweets) {
   $(".tweet-box").empty();
   for (let index of tweets) {
     const render = createTweetElement(index);
-    $(".tweet-box").prepend(render); // takes return value and appends it to the tweets container
+    $(".tweet-box").prepend(render);
   }
 };
 
