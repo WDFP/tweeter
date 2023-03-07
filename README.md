@@ -14,10 +14,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Alert for an empty tweet"]()
-!["Alert for too many characters"]()
-!["full page on a desktop"]()
-!["Sample tweet"]()
+!["Alert for an empty tweet"](https://github.com/WDFP/tweeter/blob/master/docs/Alert%20for%20an%20empty%20tweet.png?raw=true)
+!["Alert for too many characters"](https://github.com/WDFP/tweeter/blob/master/docs/Alert%20for%20too%20many%20characters%20in%20a%20tweet.png?raw=true)
+!["full page on a desktop"](https://github.com/WDFP/tweeter/blob/master/docs/Full%20page%20on%20a%20desktop:laptop.png?raw=true)
+!["Sample tweet"](https://github.com/WDFP/tweeter/blob/master/docs/Sample%20tweet%20in%20the%20%22tweet%20box%22.png?raw=true)
 
 
 ## Dependencies
