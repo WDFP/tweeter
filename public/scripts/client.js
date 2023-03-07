@@ -50,7 +50,6 @@ $(document).ready(function () {
   $("#error-over-140-char").hide();
   $("#request").submit(function (event) {
     event.preventDefault();
-    console.log(event);
 
     const charMax = 140;
     const inputChar = $(this).find("#tweet-text").val().length;
