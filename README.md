@@ -14,9 +14,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-![""]()
-![""]()
-![""]()
+!["Alert for an empty tweet"]()
+!["Alert for too many characters"]()
+!["full page on a desktop"]()
+!["Sample tweet"]()
 
 
 ## Dependencies
