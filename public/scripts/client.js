@@ -55,6 +55,8 @@ $(document).ready(function () {
 
     const charMax = 140;
     const inputChar = $(this).find("#tweet-text").val().length;
+    const tweetText = $(this).find("#tweet-text");
+    const $newCounter = $(this).parent().find(".counter");
 
     if (!inputChar) {
       // return alert("Your Tweet is Empty");
@@ -73,8 +75,10 @@ $(document).ready(function () {
         url: "/tweets/",
         method: "post",
         data: $(this).serialize(),
-      }).then(function (res) {
+      }).then(() => {
         loadTweets();
+        tweetText.val("");
+        $newCounter.text("140");
       });
     }
   });
