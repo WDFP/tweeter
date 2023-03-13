@@ -15,6 +15,8 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
+// timeago function is used for notifying the time of tweet
+
 const createTweetElement = function (data) {
   let $tweet = $(`<article class="tweets">
   <div class="tweet-header">
@@ -28,7 +30,6 @@ const createTweetElement = function (data) {
 <p class="tweet-text">${escape(data.content.text)}</p>
 
 <footer>
-  // Use of timeago is to display the timelapse between tweets
   <time>${timeago.format(data.created_at)}</time>
     <article class="hover-icons">
     <i class="fa-thin fa-flag-checkered"></i>
