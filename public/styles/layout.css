@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,10 +16,10 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
- main.container {
+main.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,9 +27,9 @@ body {
   width: 90%;
   background-color: #f4f1ec;
   margin-top: 150px;
- }
+}
 
- @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     width: 100%;
     display: flex;
@@ -35,7 +37,7 @@ body {
     width: 100%;
   }
   main.container {
-    margin: 150px 20px 0px 20px
+    margin: 150px 20px 0px 20px;
   }
 }
 

@@ -2,17 +2,17 @@ nav {
   height: 120px;
   width: 100%;
   background-color: #4056a1;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 1.5em;
   padding-right: 1.5em;
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 nav span {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 .write-tweet {
