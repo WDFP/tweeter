@@ -43,14 +43,15 @@ main.container {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (min-width: 50px) and (max-width: 1023px) {
   header {
     margin-top: 300px;
+    display: flex;
+    justify-content: center;
   }
   body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   main.container {
     width: 100%;
