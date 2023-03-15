@@ -12,6 +12,10 @@ section.tweet-box {
   border: solid black 3px;
 }
 
+.tweets:hover {
+  box-shadow: 10px 5px 5px darkorange;
+}
+
 .user-name {
   color: transparent;
   margin-left: 50px;
