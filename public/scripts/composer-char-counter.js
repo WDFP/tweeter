@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // --- our code goes here ---
-  $("#tweet-text").keyup("click", function () {
+  $("#tweet-text").keydown("click", function () {
     const maxLength = 140;
     const textLength = $(this).val().length;
     const charRemain = maxLength - textLength;
